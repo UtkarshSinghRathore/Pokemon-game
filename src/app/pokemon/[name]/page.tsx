@@ -23,7 +23,7 @@ const PokemonDetail = () => {
         <span>{data.name}</span>
       </nav>
       <div className='w-full flex items-center justify-center mt-32'>
-        <div className="border rounded flex flex-col w-1/3 bg-[#FCC666]">
+        <div className="border rounded flex flex-col w-full md:w-1/3 bg-[#FCC666]">
           <div className='bg-[#60E2C9] w-full flex justify-center items-center'>
             <img src={data.sprites.front_default} alt={data.name} className='h-auto w-1/2'/>
           </div>
