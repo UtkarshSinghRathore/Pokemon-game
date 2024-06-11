@@ -27,7 +27,7 @@ const Home = () => {
     <div className="w-full p-4 bg-[#F0f0f0]">
       <h1 className="text-2xl font-bold mb-4">Pokémon Search</h1>
       <form className="mb-4" onSubmit={handleSearch}>
-        <div className="flex space-x-4">
+        <div className="flex flex-col md:flex-row gap-5">
           <select 
             className="border p-2" 
             onChange={(e) => updateType(e.target.value)}
