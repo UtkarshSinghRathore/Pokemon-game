@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </form>
       {loading && pokemonList.length === 0 ? (
-        <p>Loading...</p>
+        <></>
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {pokemonList.map(pokemon => (
@@ -74,6 +74,7 @@ const Home = () => {
         </div>
       )}
       {loading && <p>Loading more Pokémon...</p>}
+      {!loading && pokemonList.length === 0 && <>No Pokemon found. Please Enter full Pokemon name</>}
     </div>
   );
 };
